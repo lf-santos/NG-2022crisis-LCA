@@ -1,0 +1,265 @@
+# #######################################################################
+# ENERGY FROM NATURAL GAS SCENARIO
+# #######################################################################
+- name: 'energy from NG, overall mix'
+  reference product: 'energy from NG, overall mix'
+  unit: 'kilowatt hour'
+  default_inputs:
+      - electricity from NG: 0.19910381199256028
+      - heat from NG, CHP: 0.28235396225457066
+      - heat from NG, industry: 1.0315238712927808
+      - heat from NG, households: 1.5693484432794316
+
+
+# #######################################################################
+# ELECTRICITY FROM NATURAL GAS
+# #######################################################################
+- name: 'electricity from NG'
+  reference product: 'electricity, high voltage'
+  unit: 'kilowatt hour'
+  default_inputs:
+      - electricity production, NG: 0.46
+      - electricity production, NG, CHP: 0.54
+      - electricity production, coal: 0
+      - electricity production, coal, CHP: 0
+      - electricity production, nuclear: 0
+      - electricity production, wind: 0
+      - electricity production, photovoltaic: 0
+      - electricity production, biomass, CHP: 0
+      - electricity production, oil: 0
+      - electricity production, oil, CHP: 0
+      - electricity production, lignite: 0
+      - electricity production, lignite, CHP: 0
+      - electricity production, hydro: 0
+      - electricity savings: 0
+
+- name: 'electricity production, NG'
+  reference product: 'electricity, high voltage'
+  unit: 'kilowatt hour'        
+
+- name: 'electricity production, NG, CHP'
+  reference product: 'electricity, high voltage'
+  unit: 'kilowatt hour'   
+
+- name: 'electricity production, coal'
+  reference product: 'electricity, high voltage'
+  unit: 'kilowatt hour'                                
+
+- name: 'electricity production, coal, CHP'
+  reference product: 'electricity, high voltage'
+  unit: 'kilowatt hour'
+
+- name: 'electricity production, nuclear'
+  reference product: 'electricity, high voltage'
+  unit: 'kilowatt hour'
+
+- name: 'electricity production, wind'
+  reference product: 'electricity, high voltage'
+  unit: 'kilowatt hour'
+
+- name: 'electricity production, photovoltaic'
+  reference product: 'electricity, low voltage'
+  unit: 'kilowatt hour'
+  
+- name: 'electricity production, biomass, CHP'
+  reference product: 'electricity, high voltage'
+  unit: 'kilowatt hour'
+
+- name: 'electricity production, oil'
+  reference product: 'electricity, high voltage'
+  unit: 'kilowatt hour'
+
+- name: 'electricity production, oil, CHP'
+  reference product: 'electricity, high voltage'
+  unit: 'kilowatt hour'
+
+- name: 'electricity production, lignite'
+  reference product: 'electricity, high voltage'
+  unit: 'kilowatt hour'
+  
+- name: 'electricity production, lignite, CHP'
+  reference product: 'electricity, high voltage'
+  unit: 'kilowatt hour'
+
+- name: 'electricity production, hydro'
+  reference product: 'electricity, high voltage'
+  unit: 'kilowatt hour'
+  
+- name: 'electricity savings'
+  reference product: 'electricity, high voltage'
+  unit: 'kilowatt hour'
+
+# #######################################################################
+# HEAT FROM NATURAL GAS, CHP
+# #######################################################################
+- name: 'heat from NG, CHP'
+  reference product: 'heat, district or industrial'
+  unit: 'megajoule'
+  default_inputs:
+      - heat production from NG, CHP: 1
+      - heat production from coal, CHP: 0
+      - heat production from biomass, CHP: 0
+      - heat production from oil, CHP: 0
+      - heat production from lignite, CHP: 0
+
+- name: 'heat production from NG, CHP'
+  reference product: 'heat, district or industrial'
+  unit: 'megajoule'
+
+- name: 'heat production from coal, CHP'
+  reference product: 'heat, district or industrial'
+  unit: 'megajoule'
+  
+- name: 'heat production from biomass, CHP'
+  reference product: 'heat, district or industrial'
+  unit: 'megajoule'
+  
+- name: 'heat production from oil, CHP'
+  reference product: 'heat, district or industrial'
+  unit: 'megajoule'
+  
+- name: 'heat production from lignite, CHP'
+  reference product: 'heat, district or industrial'
+  unit: 'megajoule'
+
+
+# #######################################################################
+# HEAT FROM NATURAL GAS IN INDUSTRY
+# #######################################################################
+- name: 'heat from NG, industry'
+  reference product: 'heat, district or industrial'
+  unit: 'megajoule'
+  default_inputs:
+      - heat production from NG, industry: 1
+      - heat production from coal, industry: 0
+      - heat production from oil, industry: 0
+      - heat industry, savings, efficiency improvements: 0
+      - heat industry, savings, production curtailment: 0
+
+- name: 'heat production from NG, industry'
+  reference product: 'heat, district or industrial'
+  unit: 'megajoule'
+  
+- name: 'heat production from coal, industry'
+  reference product: 'heat, district or industrial'
+  unit: 'megajoule'
+  
+- name: 'heat production from oil, industry'
+  reference product: 'heat, district or industrial'
+  unit: 'megajoule'
+
+- name: 'heat industry, savings, efficiency improvements'
+  reference product: 'heat, district or industrial'
+  unit: 'megajoule'
+  
+- name: 'heat industry, savings, production curtailment'
+  reference product: 'heat, district or industrial'
+  unit: 'megajoule'
+
+
+# #######################################################################
+# HEAT FROM NATURAL GAS IN HOUSEHOLDS
+# #######################################################################
+- name: 'heat from NG, households'
+  reference product: 'heat, central or small-scale'
+  unit: 'megajoule'
+  default_inputs:
+      - heat production from NG, central or small-scale: 1
+      - heat production from electricity: 0
+      - heat savings in households, mild weather: 0
+      - heat savings in households, efficiency improvements: 0
+      - heat savings in households, behavior improvements: 0
+
+- name: 'heat production from NG, central or small-scale'
+  reference product: 'heat, central or small-scale'
+  unit: 'megajoule'
+
+- name: 'heat production from electricity'
+  reference product: 'heat, central or small-scale'
+  unit: 'megajoule'
+
+- name: 'heat savings in households, mild weather'
+  reference product: 'heat, central or small-scale'
+  unit: 'megajoule'
+  
+- name: 'heat savings in households, efficiency improvements'
+  reference product: 'heat, central or small-scale'
+  unit: 'megajoule'
+
+- name: 'heat savings in households, behavior improvements'
+  reference product: 'heat, central or small-scale'
+  unit: 'megajoule'
+
+
+# #######################################################################
+# MARKET FOR NATURAL GAS IN EU-27, FLEXIBLE
+# #######################################################################
+- name: 'market group for natural gas, high pressure'
+  reference product: 'natural gas, high pressure'
+  unit: 'cubic meter'
+  default_inputs:
+      - natural gas, high pressure, domestic production in NL: 0.059023286
+      - natural gas, high pressure, domestic production in DE: 0.014674298
+      - natural gas, high pressure, domestic production in RO: 0.027718118     
+      - natural gas, high pressure, import from NO: 0.219891549
+      - natural gas, high pressure, import from RU: 0.359600148
+      - natural gas, high pressure, import from DZ: 0.092686055
+      - natural gas, high pressure, import from AZ: 0.022288142
+      - regasification LNG from US: 0.062439512
+      - regasification LNG from QA: 0.045359645
+      - regasification LNG from RU: 0.040319685     
+      - regasification LNG from NG: 0.03191975         
+      - regasification LNG from DZ: 0.024079812         
+      - natural gas distribution within EU27, high pressure: 1
+
+- name: 'natural gas, high pressure, domestic production in NL'
+  reference product: 'natural gas, high pressure'
+  unit: 'cubic meter'
+
+- name: 'natural gas, high pressure, domestic production in DE'
+  reference product: 'natural gas, high pressure'
+  unit: 'cubic meter'
+
+- name: 'natural gas, high pressure, domestic production in RO'
+  reference product: 'natural gas, high pressure'
+  unit: 'cubic meter'
+
+- name: 'natural gas, high pressure, import from NO'
+  reference product: 'natural gas, high pressure'
+  unit: 'cubic meter'
+
+- name: 'natural gas, high pressure, import from RU'
+  reference product: 'natural gas, high pressure'
+  unit: 'cubic meter'
+  
+- name: 'natural gas, high pressure, import from DZ'
+  reference product: 'natural gas, high pressure'
+  unit: 'cubic meter'
+
+- name: 'natural gas, high pressure, import from AZ'
+  reference product: 'natural gas, high pressure'
+  unit: 'cubic meter'
+
+- name: 'regasification LNG from US'
+  reference product: 'natural gas, high pressure'
+  unit: 'cubic meter'
+  
+- name: 'regasification LNG from QA'
+  reference product: 'natural gas, high pressure'
+  unit: 'cubic meter'
+
+- name: 'regasification LNG from RU'
+  reference product: 'natural gas, high pressure'
+  unit: 'cubic meter'
+
+- name: 'regasification LNG from NG'
+  reference product: 'natural gas, high pressure'
+  unit: 'cubic meter'
+
+- name: 'regasification LNG from DZ'
+  reference product: 'natural gas, high pressure'
+  unit: 'cubic meter'
+
+- name: 'natural gas distribution within EU27, high pressure'
+  reference product: 'natural gas distribution within EU27, high pressure'
+  unit: 'cubic meter'

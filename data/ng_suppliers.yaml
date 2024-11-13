@@ -1,0 +1,13 @@
+ng_suppliers:
+  - natural gas, high pressure, domestic production in NL
+  - natural gas, high pressure, domestic production in DE
+  - natural gas, high pressure, domestic production in RO
+  - natural gas, high pressure, import from NO
+  - natural gas, high pressure, import from RU
+  - natural gas, high pressure, import from DZ
+  - natural gas, high pressure, import from AZ
+  - regasification LNG from US
+  - regasification LNG from QA
+  - regasification LNG from RU
+  - regasification LNG from NG
+  - regasification LNG from DZ

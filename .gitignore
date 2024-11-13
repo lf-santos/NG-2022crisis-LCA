@@ -1,0 +1,7 @@
+__pycache__
+
+data/ecoinvent*
+data/results
+data/persisted_files
+
+figs/
